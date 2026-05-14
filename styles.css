@@ -39,6 +39,58 @@ button {
   font: inherit;
 }
 
+.closed-screen {
+  display: none;
+}
+
+.site-closed {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.site-closed .app-shell {
+  display: none;
+}
+
+.site-closed .closed-screen {
+  display: grid;
+  place-items: center;
+  width: min(100%, 680px);
+}
+
+.closed-panel {
+  width: 100%;
+  padding: 36px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.closed-panel span {
+  display: inline-flex;
+  min-height: 34px;
+  align-items: center;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: #e7f3f2;
+  color: var(--teal);
+  font-weight: 900;
+}
+
+.closed-panel h1 {
+  margin: 16px 0 10px;
+}
+
+.closed-panel p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
 .app-shell {
   display: grid;
   grid-template-columns: 292px 1fr;
